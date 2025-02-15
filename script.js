@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const selectedOption = document.querySelector(`input[name='question${index}']:checked`);
             if (selectedOption) {
                 progress[`question${index}`] = selectedOption.value;
-            }
+            } 
         });
         sessionStorage.setItem("progress", JSON.stringify(progress));
     }
